@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background: #EC715F;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+}
+
+.nav_item a {
+  margin-right: 30px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+.drawer_hidden {
+  display: none;
+}
+
+.nav-img {
+  height: 70px;
+}
+
+#main-visual {
+  height: 650px;
+  background-image: url(../img/mv.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.contents {
+  text-align: center;
+}
+
+.visual-contents {
+  padding-top: 200px;
+}
+
+.visual-head h1 {
+  margin: 0;
+  font-size: 64px;
+  color: #FAFAFA;
+  padding-bottom: 10px;
+}
+
+.visual-text p {
+  color: #FAFAFA;
+  font-size: 20px;
+}
+
+#portfolio {
+  background-color: #ECEFF1;
+}
+
+.portfolio-contents {
+  margin: 0 auto;
+  width: 920px;
+  padding-bottom: 90px;
+}
+
+.contents-head h2 {
+  padding-top: 90px;
+  margin-bottom: 38px;
+  font-size: 32px;
+  color: #000000;
+  position: relative;
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  display: inline-block;
+  width: 70px; /*下線の幅*/
+  height: 3px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background-color: #EC715F; /*下線の色*/
+}
+
+.contents-text {
+  margin-bottom: 30px;
+}
+
+.portfolio-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-box {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px 10px 0;
+}
+
+.portfolio-box:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-box:nth-child(4), .portfolio-box:nth-child(5), .portfolio-box:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.portfolio-box:nth-child(1) {
+  background-image: url(../img/sketch.jpg);
+}
+.portfolio-box:nth-child(2) {
+  background-image: url(../img/talk.jpg);
+}
+.portfolio-box:nth-child(3) {
+  background-image: url(../img/webcamp-mother.png);
+}
+.portfolio-box:nth-child(4) {
+  background-image: url(../img/webcamp.png);
+}
+.portfolio-box:nth-child(5) {
+  background-image: url(../img/websuku.png);
+}
+.portfolio-box:nth-child(6) {
+  background-image: url(../img/write.jpg);
+}
+
+.feature-contents {
+  margin: 0 auto;
+  width: 980px;
+  padding-bottom: 90px;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-box h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.feature-box-item {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.feature-box-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.feature-box-item-text {
+  text-align: left;
+}
+
+.feature-logo {
+  font-size: 60px;
+}
+
+#profile {
+  background-color: #ECEFF1;
+}
+
+.profile-contents {
+  width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.profile-text {
+  padding-bottom: 30px;
+}
+
+.profile-introduction {
+  display: flex;
+}
+
+.introduction-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /*画像が取得できないので表示確認のため。*/
+  background-color: blue;
+}
+
+.introduction-item {
+  width: 512px;
+}
+
+.my-info {
+  text-align: left;
+}
+
+.my-info p {
+  margin-top: 5px;
+}
+
+.profile-skill {
+  margin-top: 20px;
+}
+
+#contact {
+  margin-bottom: 90px;
+}
+
+.contact-contents {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-introduction {
+  margin-top: 30px;
+  display: flex;
+}
+
+.contact-item {
+  width: 400px;
+  text-align: left;
+}
+
+.contact-item h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.left-item {
+  margin-left: 130px;
+}
+
+.tel {
+  margin-top: 20px;
+}
+
+.sns {
+  margin-left: 40px;
+}
+
+.sns-logo-box {
+  margin-left: 40px;
+}
+
+.sns-logo {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+footer {
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  width: 100%;
+  background-color: #EC715F;
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+
+@media screen and (max-width:768px) {
+  header {
+  /*width: 100%;*/
+  /*background: #EC715F;*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.nav_list {
+  display: block;
+  list-style: none;
+
+}
+
+.nav_item a {
+  /*text-decoration: none;*/
+  color: #000;
+}
+
+  .drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+  border: 1px solid #FAFAFA;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #FAFAFA;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background: #000;
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: #000;
+}
+
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #fff;
+  transition: .5s;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  /*list-style: none;*/
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0;/* メニューを画面に入れる */
+}
+
+  #main-visual {
+    height: 650px;
+    background-image: url(../img/code.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  contents {
+    width: 90%;
+  }
+
+  .visual-head h1 {
+  font-size: 40px;
+}
+
+.visual-text p {
+  color: #FAFAFA;
+  font-size: 18px;
+}
+
+.portfolio-contents {
+  width: 90%;
+}
+
+.contents-text {
+  margin-bottom: 30px;
+}
+
+.portfolio-image {
+  display: block;
+}
+
+.portfolio-box {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 10px auto;
+}
+
+.portfolio-box:nth-child(3) {
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.portfolio-box:nth-child(1) {
+  background-image: url(../img/websuku.png);
+}
+.portfolio-box:nth-child(2) {
+  background-image: url(../img/webcamp.png);
+}
+.portfolio-box:nth-child(3) {
+  background-image: url(../img/webcamp-mother.png);
+}
+.portfolio-box:nth-child(4) {
+  display: none;
+}
+.portfolio-box:nth-child(5) {
+  display: none;
+}
+.portfolio-box:nth-child(6) {
+  display: none;
+}
+
+.feature-contents {
+  width: 90%;
+  padding-bottom: 90px;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-box h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.feature-box-item {
+  width: 90%;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.feature-box-item:nth-child(3) {
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.feature-box-item-text {
+  text-align: left;
+}
+
+.feature-logo {
+  font-size: 60px;
+}
+
+#profile {
+  background-color: #ECEFF1;
+}
+
+.profile-contents {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.profile-text {
+  padding-bottom: 30px;
+}
+
+.profile-introduction {
+  display: block;
+}
+
+.introduction-item {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-info {
+  text-align: center;
+}
+
+.my-info h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.my-info p {
+  margin-top: 0;
+}
+
+.profile-skill {
+  margin-top: 20px;
+}
+
+#contact {
+  margin-bottom: 90px;
+}
+
+.contact-contents {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-introduction {
+  margin-top: 30px;
+  display: block;
+}
+
+.contact-item {
+  width: 90%;
+  text-align: center;
+}
+
+.left-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.sns {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sns-logo-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sns-logo {
+  font-size: 50px;
+  margin-right: 8px;
+}
+
+.fa-instagram {
+  margin-right: 0;
+}
+
+}

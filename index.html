@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <title>HTML&CSS</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/5f65aff5ba.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+ <!----- header----->
+  <header>
+   <div class="header">
+      <!-- ヘッダーロゴ -->
+    <div class="logo"><a href="#main-visual"><img src="img/logo.png" alt="header-logo" class="nav-img"></a></div>
+      <!-- ハンバーガーメニュー部分 -->
+    <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+     <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+     <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- メニュー -->
+     <nav class="nav_content">
+       <ul class="nav_list">
+         <li class="nav_item"><a href="#portfolio">Portfolio</a></li>
+         <li class="nav_item"><a href="#feature">Feature</a></li>
+         <li class="nav_item"><a href="#profile">Profile</a></li>
+         <li class="nav_item"><a href="#contact">Contact</a></li>
+       </ul>
+     </nav>
+    </div>
+   </div>
+  </header>
+   <!--<header>-->
+   <!-- <div class="nav">-->
+   <!--  <label for="drawer_input" class="drawer_open"><span></span></label>-->
+   <!--  <nav>-->
+   <!--    <ul class="nav-list">-->
+   <!--      <li class="nav-item nav-header"><a href="#main-visual"><img src="img/logo.png" alt="header-logo" class="nav-img"></a></li>-->
+   <!--      <li class="nav-item nav-content"><a href="#contact">Contact</a></li>-->
+   <!--      <li class="nav-item nav-content"><a href="#profile">Profile</a></li>-->
+   <!--      <li class="nav-item nav-content"><a href="#feature">Feature</a></li>-->
+   <!--      <li class="nav-item nav-content"><a href="#portfolio">Portfolio</a></li>-->
+   <!--    </ul>-->
+   <!--  </nav>-->
+   <!--  </div>-->
+   <!--</header>-->
+ <!----- /header ----->
+
+ <!----- main ----->
+   <main>
+     <div id="main-visual">
+       <div class="visual-contents contents">
+         <div class="visual-head">
+           <h1>Lorem Ipsum</h1>
+         </div>
+         <div class="visual-text">
+           <p>simply dummy text of the printing</p>
+         </div>
+       </div>
+     </div>
+
+     <div id="portfolio">
+       <div class="portfolio-contents contents">
+         <div class="portfolio-head contents-head">
+           <h2>Portfolio</h2>
+         </div>
+         <div class="portfolio-text contents-text">
+           <p>It is a long established fact that a reader will be distracted by the readable</p>
+           <p>content of a page when looking at its layout.</p>
+           <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+         </div>
+         <div class="portfolio-image">
+           <div class="portfolio-box"></div>
+           <div class="portfolio-box"></div>
+           <div class="portfolio-box"></div>
+           <div class="portfolio-box"></div>
+           <div class="portfolio-box"></div>
+           <div class="portfolio-box"></div>
+         </div>
+       </div>
+     </div>
+
+     <div id="feature">
+      <div class="feature-contents contents">
+       <div class="feature-head contents-head">
+        <h2>Feature</h2>
+       </div>
+       <div class="feature-text contents-text">
+        <p>It is a long established fact that a reader will be distracted by the readable</p>
+        <p>content of a page when looking at its layout.</p>
+        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p></p>
+       </div>
+       <div class="feature-box">
+        <div class="feature-box-item">
+         <div class="feature-box-item-logo"><i class="fa-solid fa-bug-slash feature-logo"></i></div>
+         <h4>Strength1</h4>
+         <p class="feature-box-item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+        </div>
+        <div class="feature-box-item">
+         <div class="feature-box-item-logo"><i class="fa-solid fa-desktop feature-logo"></i></div>
+         <h4>Strength2</h4>
+         <p class="feature-box-item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+        </div>
+        <div class="feature-box-item">
+         <div class="feature-box-item-logo"><i class="fa-solid fa-gears feature-logo"></i></div>
+         <h4>Strength3</h4>
+         <p class="feature-box-item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <div id="profile">
+      <div class="profile-contents contents">
+       <div class="profile-head contents-head">
+        <h2>Profile</h2>
+       </div>
+       <div class="profile-text">
+        <p>It is a long established fact that a reader will be distracted by the readable</p>
+        <p>content of a page when looking at its layout.</p>
+        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+       </div>
+       <div class="profile-introduction">
+        <div class="introduction-item">
+         <img class="introduction-image" src="../img/my-icon.jpg">
+        </div>
+        <div class="introduction-item my-info">
+         <div class="profile-name">
+          <h4>MyName</h4>
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+         </div>
+         <div class="profile-skill">
+          <h4>MySkills</h4>
+          <p>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <div id="contact">
+      <div class="contact-contents contents">
+       <div class="contact-head contents-head">
+        <h2>Contact</h2>
+        <div class="contact-text">
+         <p>It is a long established fact that a reader will be distracted by the readable</p>
+         <p>content of a page when looking at its layout.</p>
+         <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+       </div>
+       <div class="contact-introduction">
+        <div class="contact-item left-item">
+         <div>
+          <h4>Mail</h4>
+          <a>xxx@xxx.com</a>
+         </div>
+         <div>
+          <h4 class="tel">Tel</h4>
+          <a>000-0000-0000</a>
+         </div>
+        </div>
+        <div class="contact-item right-item">
+         <div>
+          <h4 class="sns">SNS</h4>
+         </div>
+         <div class="sns-logo-box">
+          <span><i class="fa-brands fa-facebook-f sns-logo"></i></span>
+          <span><i class="fa-brands fa-twitter sns-logo"></i></span>
+          <span><i class="fa-brands fa-instagram sns-logo"></i></span>
+         </div>
+        </div>
+       </div>
+       </div>
+      </div>
+     </div>
+   </main>
+ <!----- /main ----->
+
+ <!----- footer ----->
+   <footer>
+    <p>©︎ 2017 WebCamp</p>
+   </footer>
+ <!----- /footer ----->
+ </body>
+</html>
